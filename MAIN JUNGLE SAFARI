@@ -1,0 +1,464 @@
+\\WEB PAGE POWERED BY DSPL
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jungle Adventures</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Jungle Adventures Powered By DSPL </h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="banner">
+      <h2>Welcome to the Jungle</h2>
+      <p>Explore the wild side of nature with us</p>
+    </section>
+    <section id="about">
+      <h2>About Jungle Adventures</h2>
+      <p>Jungle Adventures is your guide to the wildest and most beautiful places on Earth. Our team of experts will take you on an adventure of a lifetime, where you'll get to experience the thrill of the jungle and all its hidden treasures.</p>
+    </section>
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+
+        <img src=" C:\Users\MRUDI\Downloads\jutre.jpg ">
+        <img src="C:\Users\MRUDI\Downloads\tig.jpg">
+        <img src="C:\\Users\\MRUDI\\Downloads\\par.jpg">
+        <img src="C:\Users\MRUDI\Downloads\fores.jpg">
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; POWERED BY DSPL </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jungle Adventure</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Jungle Adventure Tour By DSPL</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Activities</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <img src="C:\Users\MRUDI\Downloads\jutre.jpg" alt="Jungle Trek">
+        <h2>Jungle Trek</h2>
+        <p>Join our experienced guides for a trek through the jungle. Learn about the local flora and fauna while getting some exercise.</p>
+        <button>Buy Ticket</button>
+      </article>
+      <article>
+        <img src="C:\Users\MRUDI\Downloads\cycle.jpg" alt="Cycling">
+        <h2>Cycling</h2>
+        <p>Rent a bike and explore the jungle at your own pace. Our bikes are suitable for all ages and come with helmets and locks.</p>
+        <button>Rent Cycle</button>
+      </article>
+      <article>
+        <img src="C:\Users\MRUDI\Downloads\carent.jpg" alt="Car Rental">
+        <h2>Car Rental</h2>
+        <p>Need some extra horsepower to explore the jungle? Rent a car from us and drive through the jungle in style.</p>
+        <button>Rent Car</button>
+      </article>
+      <article>
+        <img src="C:\Users\MRUDI\Downloads\ai.jpg" alt="AI Tour">
+        <h2>AI Tour</h2>
+        <p>Experience the jungle with our state-of-the-art AI tour guide. Our AI guide can answer all your questions and provide you with a personalized tour experience.</p>
+        <button>AI Tour</button>
+      </article>
+    </main>
+    <footer>
+      <p>2023 Jungle Adventures Powered By DSPL</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </form>
+    </footer>
+  </body>
+</html>
+
+
+
+<style>
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #006633;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#banner {
+  background-image: url('images/jungle-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+#about {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+}
+
+#gallery {
+  padding: 50px;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-container img {
+  height: 200px
+}
+
+
+
+
+/* Slide show container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next and previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the next button */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Jungle theme colors */
+body {
+  background-color: #8F9779;
+  color: #fff;
+}
+
+a {
+  color: #B3C88C;
+}
+
+h1, h2, h3 {
+  color: #fff;
+}
+
+/* Add your own styles here */
+
+/* Example: Jungle leaf border */
+.jungle-border {
+  border: 10px solid #B3C88C;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Example: Jungle background image */
+.jungle-background {
+  background-image: url("https://www.example.com/images/jungle-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Jungle theme colors */
+:root {
+  --primary-color: #00524f;
+  --secondary-color: #d1e7e0;
+  --accent-color: #78c0e0;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 36px;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  margin-right: 20px;
+}
+
+header nav a {
+  font-size: 18px;
+}
+
+/* Main styles */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+main article {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+main article img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+main article h2 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+main article p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: var(--secondary-color);
+  margin: 0;
+  font-size: 18px;
+}
+
+
+
+
+
+
+</style>
+
+
+
+<script>
+
+// DSPL data for the gallery images
+const galleryData = [
+  {
+    name: "Jungle Waterfall",
+    src: "C:\\Users\\MRUDI\\Downloads\\waterfal.jpg",
+    description: "This stunning waterfall is hidden deep within the jungle. It's the perfect place to cool off after a long hike."
+  },
+  {
+    name: "Majestic Tiger",
+    src: "C:\\Users\\MRUDI\\Downloads\\tig.jpg",
+    description: "Spotting a tiger in the wild is a rare and unforgettable experience. Our guides are experts in tracking these elusive creatures."
+  },
+  {
+    name: "Vibrant Parrots",
+    src: "C:\\Users\\MRUDI\\Downloads\\par.jpg",
+    description: "The jungle is home to some of the most beautiful and colorful birds in the world, like these vibrant parrots."
+  },
+  {
+       name: "Ancient ruins",
+    src: "C:\Users\\MRUDI\\Downloads\\fores.jpg",
+    description: "The jungle is full of mysteries, like these ancient ruins that have been reclaimed by nature."
+  }
+];
+
+// Function to create gallery items from DSPL data
+function createGalleryItems(data) {
+  let items = "";
+  data.forEach(item => {
+    items += `
+      <div class="gallery-item">
+        <img src="${item.src}">
+        <div class="gallery-item-overlay">
+          <h3>${item.name}</h3>
+          <p>${item.description}</p>
+        </div>
+      </div>
+    `;
+  });
+  return items;
+}
+
+// Add gallery items to the gallery container
+const galleryContainer = document.querySelector(".gallery-container");
+galleryContainer.innerHTML = createGalleryItems(galleryData);
+
+
+
+</script>
+
+
+\\WEB PAGE POWERED BY DSPL
